@@ -1,0 +1,29 @@
+.divErro{
+    color: white;
+    background: black;
+    /*padding: 45px;*/
+    width: 100%;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divErro h1{
+    font-size: 100px;
+}
+
+.linkErro{
+    text-decoration: none;
+    background-color: #116FEB;
+    color: white;
+    padding: 10px;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+
+.linkErro:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
