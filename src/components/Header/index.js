@@ -6,9 +6,9 @@ function Header(){
     return(
       <header id={"header"}>
 
-          <Link to="/" className="logo">Prime Cine </Link>
+          <Link to="/"           className="logo">Prime Cine</Link>
 
-          <Link to="/filme"  className="favoritos">Meus Filmes</Link>
+          <Link to="/favoritos"  className="favoritos">Meus Filmes</Link>
 
           {/*<Link to="/teste"  className="favoritos">Teste</Link>*/}
 

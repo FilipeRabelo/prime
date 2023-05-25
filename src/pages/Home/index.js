@@ -11,7 +11,6 @@ import { Link } from "react-router-dom";
 // https://api.themoviedb.org/3/movie/now_playing?api_key=16b8d42d27d0cee3068fda5eea17a741
 // nossa rota => /movie/now_playing
 
-
 function Home(){
 
     // vamos criar um stado para armazenar os dados
@@ -50,6 +49,7 @@ function Home(){
     }, [])
 
 
+    // PRECISAR SER ANTES DO RETURN //
     if(loading){   // se loading estiver true...
         return (
             <div className={"loading"}>
@@ -66,12 +66,16 @@ function Home(){
 
                 {filmes.map( (filme) => {
 
-                    return(                          // return pq quero retorna algo na tela
-                        <article key={filme.id}>     {/* PROPRIEDADE key OBRIGATORIA  */}
+                    return(                          // return pq quero retorna algo na tela //
+                        <article key={filme.id}>        {/* PROPRIEDADE key OBRIGATORIA  */}
 
                             <strong>{filme.title}</strong>
 
-                            <img src={`https://image.tmdb.org/t/p/original/${filme.backdrop_path}`} alt={filme.title}/>
+                            {/* <Link to={`/filme/${filme.id}`} className={"link"}>*/}
+                            {/*     <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>*/}
+                            {/* </Link> <br/>*/}
+
+                            <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title}/>
 
                             <Link to={`/filme/${filme.id}`} className={"link"}>Acessar</Link> <br/>
 

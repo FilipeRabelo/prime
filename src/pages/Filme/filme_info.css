@@ -1,0 +1,148 @@
+
+.filme_info{
+    margin: 0 auto;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 8px;
+
+    text-align: start;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+}
+
+.filme_info h2{
+    margin-top: 15px 0;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+.filme_info img{
+    border-radius: 8px;
+    width: 800px;
+    max-width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+}
+
+.filme_info h3{
+    margin-top: 14px;
+    margin-bottom: 10px;
+
+}
+
+.filme_info span{
+     margin: 8px 0;
+    align-items: flex-start;
+}
+
+
+
+.area_buttons{
+    text-align: center;
+    align-items: center;
+    justify-content: center;display: flex;
+    /*margin-bottom: 15px;*/
+    margin: 15px 0;
+}
+
+.area_buttons button{
+    margin-right: 12px;
+    margin-top: 14px;
+    margin-left: 0;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition:  all 0.5s;
+    background-color: #116FEB;
+}
+
+.area_buttons button:hover{
+    color: white;
+    background-color: #116FEB;
+}
+
+.area_buttons a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition:  all 0.5s;
+}
+
+.area_buttons a:hover{
+    /*text-decoration: none;*/
+    color: white;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    font-weight: bold;
+    padding: 105px;
+}
+
+
+/*.filme_info article{*/
+/*    width: 100%;*/
+/*    background-color: black;*/
+/*    padding: 15px;*/
+/*    border-radius: 4px;*/
+
+/*}*/
+
+/*.filme_info strong{*/
+/*    margin-bottom: 15px;*/
+/*    text-align: center;*/
+/*    font-size: 22px;*/
+/*    display: block;*/
+/*}*/
+
+
+
+/*.filme_info a{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    padding: 10px 0;*/
+/*    font-size: 20px;*/
+/*    background-color: #116FEB;*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    border-bottom-left-radius: 8px;*/
+/*    border-bottom-right-radius: 8px;*/
+/*    transition:  0.9s;*/
+/*}*/
+
+/*.filme_info a:hover{*/
+/*    color: black;*/
+/*    background-color: white;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*.loading{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-top: 14px;*/
+/*    font-weight: bold;*/
+/*    padding: 105px;*/
+/*}*/
