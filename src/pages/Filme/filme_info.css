@@ -1,16 +1,17 @@
 
 .filme_info{
-    margin: 0 auto;
-    margin-top: 18px;
+    margin: 18px auto 0;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    max-width: 940px;
     padding: 0 8px;
-
-    text-align: start;
     background-color: lightgray;
     color: black;
     border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
 }
 
 .filme_info h2{
@@ -34,8 +35,9 @@
 }
 
 .filme_info span{
-     margin: 8px 0;
-    align-items: flex-start;
+    margin: 8px 0;
+    align-items: start;
+    font-weight: 500;
 }
 
 
@@ -43,7 +45,8 @@
 .area_buttons{
     text-align: center;
     align-items: center;
-    justify-content: center;display: flex;
+    justify-content: center;
+    display: flex;
     /*margin-bottom: 15px;*/
     margin: 15px 0;
 }
@@ -61,23 +64,33 @@
     font-weight: bold;
     transition:  all 0.5s;
     background-color: #116FEB;
+    color: white;
 }
 
 .area_buttons button:hover{
-    color: white;
+    color: black;
     background-color: #116FEB;
+}
+
+#btnSlavar{
+    background-color: green;
+}
+
+#btnHome{
+    background-color: red;
 }
 
 .area_buttons a{
     text-decoration: none;
-    color: black;
+
     font-weight: bold;
     transition:  all 0.5s;
+    color: white;
 }
 
 .area_buttons a:hover{
     /*text-decoration: none;*/
-    color: white;
+    color: black;
 }
 
 .loading{
@@ -88,61 +101,3 @@
     font-weight: bold;
     padding: 105px;
 }
-
-
-/*.filme_info article{*/
-/*    width: 100%;*/
-/*    background-color: black;*/
-/*    padding: 15px;*/
-/*    border-radius: 4px;*/
-
-/*}*/
-
-/*.filme_info strong{*/
-/*    margin-bottom: 15px;*/
-/*    text-align: center;*/
-/*    font-size: 22px;*/
-/*    display: block;*/
-/*}*/
-
-
-
-/*.filme_info a{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    padding: 10px 0;*/
-/*    font-size: 20px;*/
-/*    background-color: #116FEB;*/
-/*    text-decoration: none;*/
-/*    color: white;*/
-/*    font-weight: bold;*/
-/*    border-bottom-left-radius: 8px;*/
-/*    border-bottom-right-radius: 8px;*/
-/*    transition:  0.9s;*/
-/*}*/
-
-/*.filme_info a:hover{*/
-/*    color: black;*/
-/*    background-color: white;*/
-/*}*/
-
-
-
-
-
-
-
-
-
-
-
-
-/*.loading{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    margin-top: 14px;*/
-/*    font-weight: bold;*/
-/*    padding: 105px;*/
-/*}*/

@@ -1,17 +1,189 @@
-
-
-.favoritosFilmes a{
-    text-decoration: none;
-    background-color: #116FEB;
-    color: white;
-    padding: 10px;
-    margin-top: 14px;
-    border-radius: 5px;
-    justify-content: center;
+.favoritosFilmes {
+  justify-content: space-between;
+  border-radius: 5px;
+  max-width: 920px;
+  min-width: auto;
+  background: url("./pipoca1.jpg") center;
+  color: black;
+  font-weight: bold;
+  margin: 18px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Mantenha para centralizar o conteúdo */
+  border-radius: 5px;
+  max-width: 920px;
+  width: 100%;
+  padding: 20px;
 }
 
-.favoritosFilmes a:hover{
-    background-color: white;
-    color: black;
-    font-weight: bold;
+.favoritosFilmes h1 {
+  margin: 15px;
+  width: 80%;
+  color: black;
+  border: 1px solid #6f42c1;
+  background-color: white;
+  border-radius: 5px;
+  padding: 4px;
+
+  justify-content: flex-start; /* Alinha os itens no início */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  width: 80%; /* Largura relativa */
+  padding: 0; /* Remove padding padrão */
+  margin: 0; /* Remove margin padrão */
+}
+
+.favoritosFilmes span {
+  font-size: 18px;
+  margin: 0 auto;
+  border: 2px solid #6f42c1;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  min-width: 160px;
+  max-width: 300px;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* background-color: #116feb; */
+}
+
+.tituloFilme {
+  /* width: 100%; Faz a div ocupar toda a largura do li */
+  text-align: left; /* Alinha o texto à esquerda */
+  flex: 1;
+  align-items: flex-start;
+}
+
+.favoritosFilmes ul {
+  margin-bottom: 350px;
+  max-height: 150px;
+  list-style: none;
+  width: 80%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.favoritosFilmes ul li {
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.favoritosFilmes ul li span {
+  text-align: left; /* Alinha o texto do span à esquerda */
+  flex: 1; /* Permite que o span ocupe todo o espaço disponível */
+}
+
+.acoesFilme {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btnVer {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #116feb;
+  /* margin-right: 14px; */
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 65px;
+  cursor: pointer;
+  margin-left: 14px;
+  font-weight: bold;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6f42c1;
+  transition: all 0.9s;
+  font-size: 18px;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.btnExcluir {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: red;
+  margin-right: 14px;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  width: 65px;
+  cursor: pointer;
+  margin-left: 14px;
+  font-weight: bold;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6f42c1;
+  transition: all 0.9s;
+  font-size: 16px;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#spanSemFilmes {
+  font-size: 18px;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  /* width: 80%; */
+}
+
+@media (max-width: 768px) {
+  /* Ajuste o valor conforme necessário */
+  .favoritosFilmes {
+    width: 100%; /* Define a largura para 95% em telas menores */
+  }
+
+  .favoritosFilmes ul {
+    width: 100%; /* Garante que a lista também ocupe 95% */
+  }
+
+  .favoritosFilmes h1 {
+    width: 100%; /* Garante que o título também ocupe 95% */
+  }
+
+  .favoritosFilmes span {
+    font-size: 14px;
+    display: block;
+    width: 100%; /* Opcional: define um limite para a largura do span */
+  }
+
+  .tituloFilme {
+    font-size: 14px;
+    width: auto;
+  }
+
+  .divFavoritos {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+
+  .btnExcluir {
+    font-size: 14px;
+  }
+
+  .btnVer {
+    font-size: 16px;
+  }
 }

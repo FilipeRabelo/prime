@@ -1,65 +1,94 @@
-.link{
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.4s;
-}
+/*.link{*/
 
-.link:hover{
+/*    font-weight: bold;*/
+/*    font-size: 20px;*/
+/*    cursor: pointer;*/
+/*    transition: 0.4s;*/
+/*    color: white;*/
+/*}*/
+
+#linkAcessar {
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000;
+  transition: all 0.7s;
+
+  &:hover {
     color: white;
     background-color: black;
+    box-shadow: 0 0 30px rgba(57, 255, 20, 1); /* Efeito de luzes */
+    color: rgba(57, 255, 20, 1);
+  }
 }
 
-.listaFilmes{
-    max-width: 1200px;
-    margin: 14px auto;
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(0, 0, 255, 0.9); /* Brilho aumentado */
+  }
 }
 
-.loading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 14px;
-    font-weight: bold;
-    padding: 105px;
+.listaFilmes {
+  max-width: 1200px;
+  margin: 14px auto;
 }
 
-.listaFilmes article{
-    width: 100%;
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px;
+  font-weight: bold;
+  padding: 105px;
+}
+
+.listaFilmes article {
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  border-radius: 7px;
+  transition: all 0.7s;
+
+  margin-bottom: 35px;
+  &:hover {
+    color: white;
     background-color: black;
-    padding: 15px;
-    border-radius: 4px;
-
+    box-shadow: 0 0 30px rgba(57, 255, 20, 1); /* Efeito de luzes */
+    color: rgba(57, 255, 20, 1);
+  }
 }
 
-.listaFilmes strong{
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 22px;
-    display: block;
+.listaFilmes strong {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 22px;
+  display: block;
 }
 
-.listaFilmes img{
-    width: 900px;
-    max-width: 100%;
-    max-height: 390px;
-    object-fit: cover;
-    display: block;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.listaFilmes img {
+  width: 900px;
+  max-width: 100%;
+  max-height: 390px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
-.listaFilmes a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    font-size: 20px;
-    background-color: #116FEB;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.listaFilmes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: #39ff14;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }

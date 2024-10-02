@@ -3,17 +3,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /*margin-top: 15px;*/
 }
 
 body{
-    background-color: black;
+    /*background-color: black;*/
+    /* background: url("./pages/Favoritos/cine.jpeg"); */
+    background-color: #1C1C1C;
     color: white;
     text-align: center;
     align-items: center;
     padding: 25px;
+
 }
 
 .app{
+
     display: flex;
     width: 100%;
     justify-content: center;
